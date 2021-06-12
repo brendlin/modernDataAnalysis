@@ -19,6 +19,7 @@ jobs:
         pip install nbconvert ipykernel matplotlib numpy
     - name: Run nbconvert
       run: |
+        rm plotting_files/*.png
         jupyter nbconvert --execute --to markdown plotting.ipynb
         echo pwd: `pwd`
         ls -alt
