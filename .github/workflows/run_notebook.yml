@@ -18,4 +18,8 @@ jobs:
         # You need ipykernel to solve the "No such kernel named python3" error
         pip install nbconvert ipykernel matplotlib numpy
     - name: Run nbconvert
-      run: jupyter nbconvert --execute --to markdown plotting.ipynb
+      run: |
+        jupyter nbconvert --execute --to markdown plotting.ipynb
+        echo pwd: `pwd`
+        ls -alt
+        git status
