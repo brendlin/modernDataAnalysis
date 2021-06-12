@@ -16,5 +16,4 @@ jobs:
         GITHUB: ${{ toJson(github) }}
       with:
         notebook: "plotting.ipynb"
-        params: ""
         isReport: False
