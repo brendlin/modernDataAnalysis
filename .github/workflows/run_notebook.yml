@@ -29,10 +29,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions"
         git add *.md *_files
-        if [-z "$(git status --porcelain)"]; then
+        if [ -z "$(git status --porcelain)" ]; then
            echo "::set-output name=push::false"
         else
-           git commit -m "Update "
+           git commit -m "Update notebook markdowns"
            echo "::set-output name=push::true"
         fi
       shell: bash
@@ -41,3 +41,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
+         branch: ${{ github.ref }}
