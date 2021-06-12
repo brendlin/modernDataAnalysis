@@ -17,4 +17,4 @@ jobs:
       with:
         notebook: "plotting.ipynb"
         isReport: False
-        params: "empty_params.json"
+        params: {}
