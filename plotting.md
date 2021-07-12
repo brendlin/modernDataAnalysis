@@ -33,15 +33,8 @@ ax.legend();
 ```
 
 
-
-
-    <matplotlib.legend.Legend at 0x7fd6460b7c70>
-
-
-
-
     
-![png](plotting_files/plotting_3_1.png)
+![png](plotting_files/plotting_3_0.png)
     
 
 
@@ -56,15 +49,8 @@ ax.set(xlabel='x axis', ylabel='y axis');
 ```
 
 
-
-
-    [Text(0.5, 0, 'x axis'), Text(0, 0.5, 'y axis')]
-
-
-
-
     
-![png](plotting_files/plotting_4_1.png)
+![png](plotting_files/plotting_4_0.png)
     
 
 
