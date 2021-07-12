@@ -21,6 +21,7 @@ jobs:
       run: |
         rm plotting_files/*.png || true
         jupyter nbconvert --execute --to markdown plotting.ipynb
+        jupyter nbconvert --execute --to markdown gridStudies.ipynb
         echo pwd: `pwd`
         ls -alt
         git status
